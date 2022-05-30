@@ -29,22 +29,19 @@ ul {
   list-style: none;
 }
 
-img {
-  max-width: 100%;
-  height: auto;
-}
 body{
   background-color: #f1f4f8;
 }
 .heading{
   text-align: center;
 }
-.each-box{
+.box{
   height: 4rem;
   width :  4rem ;
   border: 1px solid black ;
   text-align: center;
 }
-.flex {
+.boxes {
   display: flex;
+  flex-wrap: wrap;
 }
