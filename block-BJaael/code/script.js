@@ -1,18 +1,18 @@
-/*
-let parentElm = document.querySelector('.img') ;
+
+let parentElm = document.querySelector('.boxes') ;
 
 
-for (let i = 0; i < 100; i++) {
-parentElm.innerHTML =
-`
-<div class="each-box">
-<p>5</p>
-</div>
-`
+for (let i = 0; i < 500; i++) {
+    let div = document.createElement("div");
+    div.classList.add("box");
+    let h3 = document.createElement("h3");
+    let randomNo = Math.floor (Math.random()* 999);
+    h3.innerText = randomNo;
 
-
+    div.append(h3);
+    parentElm.append(div);
 }
-*/
+
 
 
 
@@ -29,16 +29,14 @@ function generateRandomColor() {
 
 
 
- let img = document.querySelector ('.img')
- let eachbox = document.querySelectorAll ('.each-box')
+let allBoxes = document.querySelectorAll ('.box')
+
+function handleMouseMove() {
+    allBoxes.forEach ((box) =>{
+    box.style.backgroundColor = generateRandomColor()
+    box.children[0].innerText = Math.floor (Math.random()* 999)
+})
+}
  
+parentElm.addEventListener ("mousemove" , handleMouseMove )
 
-
-img.addEventListener ("mousemove" , function () {
-    
-    eachbox.forEach((each) =>{
-    each.style.backgroundColor = generateRandomColor();
-    num = document.querySelector ('.number')
-    num.innerText = Math.floor(Math.random() * 999)
-})
-})
