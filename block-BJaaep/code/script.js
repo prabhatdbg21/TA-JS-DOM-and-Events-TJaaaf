@@ -1,21 +1,24 @@
-let pro = document.querySelector(".pro")
-let boxes = document.querySelectorAll(".box1")
+let firstBoxes = document.querySelectorAll (".first li");
 
+firstBoxes.forEach ((box, index) => {
+    box.addEventListener ("click" , (event) => {
+        event.target.innerText = index + 1;
 
-let count = 0 ;
-
-boxes.forEach ((boxee) => {
-    count = count + 1
-    boxee.innerText = count ;  
-     
+        setTimeout(() => {
+            event.target.innerText = ""  
+        }, 5000);
+    })
 })
 
-function hadleEvent (event){
-    let nu = (event.target.innerText) 
-    event.target.innerText = nu
-    setTimeout(() => {
-    event.target.innerText = ''
-    }, 1000);
-}
 
-pro.addEventListener ("click" , hadleEvent)
+
+let secondBox = document.querySelector (".second");
+
+secondBox.addEventListener ("click" , (event) => {
+    let text = event.target.dataset.text
+    event.target.innerText = text;
+
+    setTimeout(() => {
+        event.target.innerText = ""  
+    }, 5000);
+})
