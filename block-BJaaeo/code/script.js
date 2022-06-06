@@ -1,18 +1,23 @@
+let result =  document.querySelector (".result")
 let allInput = document.querySelectorAll(".input")
 
 allInput.forEach ((input) =>{
     input.addEventListener ( "click" , (event) => {
-        console.log  (event.target.innerText) ;
-        document.querySelector (".result").innerText += event.target.innerText ;
+        if ( result.innerText == 0){
+            result.innerText = event.target.innerText ;
+        }
+        else {
+            result.innerText += event.target.innerText ;
+        }
     })
 })
 
 let equalto = document.querySelector (".equalto") ;
 equalto.addEventListener ( "click" , () => {
-    document.querySelector (".result").innerText = eval (document.querySelector (".result").innerText) ;
+    result.innerText = eval (result.innerText) ;
 })
 
 let clear = document.querySelector (".clear")
 clear.addEventListener ( "click" , () => {
-    document.querySelector (".result").innerText = "" ;
+    result.innerText = 0 ;
 })
