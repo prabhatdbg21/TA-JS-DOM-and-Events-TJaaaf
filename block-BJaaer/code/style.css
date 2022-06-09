@@ -91,3 +91,21 @@ input[type='text'] {
 .terms {
   display: inline-block;
 }
+
+
+
+
+.dis {
+  display: none;
+}
+.hello {
+  font-weight: 700;
+}
+a{
+  text-decoration: none;
+  text-align: end;
+  display: none;
+}
+.hi{
+  display: block;
+}
