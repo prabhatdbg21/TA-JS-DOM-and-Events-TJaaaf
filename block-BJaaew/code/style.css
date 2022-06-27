@@ -153,15 +153,18 @@ body {
   grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
   grid-gap: 1rem;
 }
-article {
-  border-radius: 10px;
-  width :  32%;
-  padding: 0.6rem 1rem;
-  background-color: white;
-  box-shadow: 1px 1px 0.5px rgba(0, 0, 0, 0.1);
-  height: 300px;
-  margin-bottom: 1rem;
-}
+
+
+
+
+
+
+
+
+
+
+
+/* new */
 h1,
 h2 {
   text-align: center;
@@ -173,32 +176,58 @@ header{
   font-size: 2rem;
   text-align: center;
 }
-header input{
+.search{
   width : 40% ;
   border: 2px solid blue;
   border-radius: 5px;
 }
-.all-box{
-  background: #f4f5f8;
-  padding: 1rem 2rem;
+
+.tags{
+  margin: 1rem auto;
+  display: flex;
+  justify-content: center;
 }
-.displayNone{
-  display: none;
+.tags li {
+  margin-left: 0.5rem;
+  background-color: black;
+  color : white ;
+  border: 1px solid black;
+  border-radius: 5px;
+  text-transform: uppercase;
+  font-size: 0.7rem;
+  padding: 0.2rem 0.4rem;
 }
-img{
+
+
+.cards{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.cards li {
+  display: flex;
+  flex-wrap: wrap;
+  width: 30%;
+  background-color: #bae1e9;
+  margin-bottom: 1.5rem;
+  padding: 1rem;
+}
+.cards li img {
   border-radius: 50%;
   border: 2px solid #7aa59f;
   margin: 1rem auto;
 }
-h2{
+.cards li h2{
+  width :  100%;
   padding-left: 1.5rem;
 }
-p{
+.cards li p{
   padding: 1.5rem 0;
   font-size: 0.9rem;
   text-align: center;
 }
-a{
+.cards li button{
   display: inline-block;
   width :  100%;
   background-color: #e7edfd;
@@ -209,22 +238,8 @@ a{
   text-align: center;
 }
 
-.name{
-  margin: 1rem auto;
-  display: flex;
-  justify-content: center;
+.active{
+  background: white !important ;
+  color : black !important;
+  border: 1px solid black !important;
 }
-button {
-  margin-left: 0.5rem;
-  background-color: black;
-  color : white ;
-  border-radius: 5px;
-  text-transform: uppercase;
-  font-size: 0.7rem;
-  padding: 0.2rem 0.4rem;
-}
- button:hover{
-  background-color: white;
-  color : black ;
-}
-
