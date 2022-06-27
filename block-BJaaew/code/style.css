@@ -1,7 +1,230 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+
+/* My Resets */
+*, *::before, *::after{
+  box-sizing: border-box;
+}
+/* Varible */
+:root{
+    --primary:  #ea5433;
+    --bg: #fef9f7;
+    --text-light: #716f6f;
+    --text-dark: #313030;
+    --heading: #554945;
+    --heading-secondary: #343a40;
+}
+
+/* General Styles */
+body{
+  font-family: 'Raleway', sans-serif;
+  line-height: 1.5;
+}
+a{
+    text-decoration: none;
+}
+
+/*  Container */
+.container{
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 32px;
+  width: 100%;
+}
+
+/* Flex */
+.flex{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.flex-20{
+    flex: 0 1 20%;
+}
+.flex-25{
+    flex: 0 1 25%;
+}
+.flex-32{
+    flex: 0 1 32%;
+}
+.flex-40{
+    flex: 0 1 40%;
+}
+.flex-48{
+    flex: 0 1 48%;
+}
+.flex-55{
+    flex: 0 1 55%;
+}
+.justify-start{
+  justify-content: start;
+}
+.flex-column{
+    flex-direction: column;
+}
+.flex-wrap{
+  flex-wrap: wrap;
+}
+.justify-content{
+  justify-content: flex-start;
+}
+.flex-justify-content{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Flexible Image */
+.flexible-image{
+  width: 100%;
+  height: 100%;
+    object-fit: cover;
+}
+
+/* Buttons */
+.btn{
+  font-size: 2rem;
+  padding: 16px 24px;
+  text-align: center;
+  border: 0;
+}
+
+
+
+
+
+
 * {
   box-sizing: border-box;
 }
 body {
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
-    Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
+.container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+  grid-gap: 1rem;
+}
+article {
+  border-radius: 10px;
+  width :  32%;
+  padding: 0.6rem 1rem;
+  background-color: white;
+  box-shadow: 1px 1px 0.5px rgba(0, 0, 0, 0.1);
+  height: 300px;
+  margin-bottom: 1rem;
+}
+h1,
+h2 {
+  text-align: center;
+}
+header{
+  background-color: #4074d4;
+  padding: 3rem;
+  color : white;
+  font-size: 2rem;
+  text-align: center;
+}
+header input{
+  width : 40% ;
+  border: 2px solid blue;
+  border-radius: 5px;
+}
+.all-box{
+  background: #f4f5f8;
+  padding: 1rem 2rem;
+}
+.displayNone{
+  display: none;
+}
+img{
+  border-radius: 50%;
+  border: 2px solid #7aa59f;
+  margin: 1rem auto;
+}
+h2{
+  padding-left: 1.5rem;
+}
+p{
+  padding: 1.5rem 0;
+  font-size: 0.9rem;
+  text-align: center;
+}
+a{
+  display: inline-block;
+  width :  100%;
+  background-color: #e7edfd;
+  border-radius: 5px;
+  border: hidden;
+  padding: 0.5rem 0;
+  color : #6f85ff;
+  text-align: center;
+}
+
+.name{
+  margin: 1rem auto;
+  display: flex;
+  justify-content: center;
+}
+button {
+  margin-left: 0.5rem;
+  background-color: black;
+  color : white ;
+  border-radius: 5px;
+  text-transform: uppercase;
+  font-size: 0.7rem;
+  padding: 0.2rem 0.4rem;
+}
+ button:hover{
+  background-color: white;
+  color : black ;
+}
+
