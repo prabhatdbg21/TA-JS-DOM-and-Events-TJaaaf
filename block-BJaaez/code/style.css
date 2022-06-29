@@ -1,0 +1,183 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+
+/* My Resets */
+*, *::before, *::after{
+    box-sizing: border-box;
+}
+/* Varible */
+:root{
+    --primary:  #ea5433;
+    --bg: #fef9f7;
+    --text-light: #716f6f;
+    --text-dark: #313030;
+    --heading: #554945;
+    --heading-secondary: #343a40;
+}
+
+/* General Styles */
+body{
+    font-family: 'Raleway', sans-serif;
+    line-height: 1.5;
+}
+a{
+    text-decoration: none;
+}
+
+
+
+/* Flex */
+.flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.flex-20{
+    flex: 0 1 20%;
+}
+.flex-25{
+    flex: 0 1 25%;
+}
+.flex-32{
+    flex: 0 1 32%;
+}
+.flex-40{
+    flex: 0 1 40%;
+}
+.flex-48{
+    flex: 0 1 48%;
+}
+.flex-55{
+    flex: 0 1 55%;
+}
+.justify-start{
+    justify-content: start;
+}
+.flex-column{
+    flex-direction: column;
+}
+
+/* Flexible Image */
+.flexible-image{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Buttons */
+.btn{
+    font-size: 2rem;
+    padding: 16px 24px;
+    text-align: center;
+    border: 0;
+}
+
+
+/* Flex */
+.flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 1.5rem;
+    display: none;
+}
+.display{
+    display: flex;
+}
+.none{
+    display: none;
+}
+
+
+/*  Container */
+.container{
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 0 32px;
+    width: 100%;
+}
+
+.input{
+    box-shadow: 2px 2px 4px 3px rgba(0, 0, 0, 0.4);
+    padding: 1rem;
+}
+
+h1{
+    text-align: center;
+    font-size: 4rem;
+    color : rgba(195, 74, 74, 0.4);
+    font-weight: 100;
+    padding-top: 1.5rem;
+}
+
+#text{
+    width: 100%;
+    padding: 1rem 1.5rem;
+    border-radius: 5px;
+}
+
+li{
+    display: flex;
+    padding: 1rem 1.5rem;
+    align-items: center;
+}
+
+li p{
+    padding: 0.5rem 6rem 0.5rem 1rem;
+}
+.linethrough {
+    text-decoration: line-through;
+    background-color: #ea5433;
+    color : blue
+}
+button{
+    background-color: white;
+    border: 0px;
+}
